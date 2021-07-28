@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Weather App Spain</title>
+</head>
+
+<body>
+    <h1>EL TIEMPO EN ESPAÑA-AEMET</h1>
+    <div class="wrap-content-today">
+        <form>
+            <input type="search" name="search" id="search" required autocomplete="off""
+                placeholder="Introduce localidad de España">
+            <button id="btn-search"><i class="fas fa-search"></i></button>
+        </form>
+        <section class="actual-information"></section>
+    </div>
+    <div class="wrap-content-next"></div>
+
+    <template id="today">
+            <h2 class="city"></h2>
+            <p class="fecha"></p>
+            <p class="wether"></p>
+            <p class="wether-text"></p>
+            <p class="temperature"></p>
+            <p class="humidity"></p>
+            <p class="wind"></p>
+    </template>
+    
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>

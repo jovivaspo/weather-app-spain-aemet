@@ -1,0 +1,244 @@
+/*Var*/
+/*styles*/
+html {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  background-color: #2d86ec;
+  color: white;
+  background-image: url("https:source.unsplash.com/1600x900/?nature,water,architecture");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+h1 {
+  background-color: #000000d0;
+  color: white;
+  width: 40%;
+  border-radius: 10px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.wrap-content-today {
+  background-color: #000000d0;
+  width: 450px;
+  min-height: 250px;
+  opacity: 0.9;
+  margin: 0 auto;
+  margin-top: 70px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+form #search {
+  width: 65%;
+  height: 30px;
+  border-radius: 30px 30px;
+  padding-left: 10px;
+  border: none;
+  background-color: #8a8a8a;
+  opacity: 0.75;
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+form #search::placeholder {
+  color: white;
+}
+form #btn-search {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #8a8a8a;
+  opacity: 0.75;
+  cursor: pointer;
+}
+form #btn-search i {
+  margin: 0 auto;
+}
+
+.actual-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.actual-information h2 {
+  font-size: 35.2px;
+  margin: 0;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.actual-information p {
+  margin: 0;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.actual-information p img {
+  width: 2rem;
+  height: auto;
+  filter: invert(100%);
+}
+.actual-information .error {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.actual-information:last-child {
+  margin-bottom: 10px;
+}
+
+.wrap-content-next {
+  background-color: #000000d0;
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 750px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrap-content-next .day {
+  padding: 10px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 0.7rem;
+  width: 90px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.wrap-content-next .day img {
+  width: 2rem;
+  height: auto;
+  filter: invert(100%);
+}
+
+@media screen and (max-width: 110px) {
+  h1 {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 820px) {
+  h1 {
+    width: 65%;
+  }
+
+  .wrap-content-today {
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 410px;
+    min-height: 320px;
+  }
+
+  .wrap-content-next {
+    width: 580px;
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 580px) {
+  h1 {
+    width: 70%;
+  }
+
+  .wrap-content-next {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 470px) {
+  h1 {
+    font-size: 22px;
+    width: 85%;
+  }
+
+  .wrap-content-today {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 300px;
+    min-height: 320px;
+  }
+  .wrap-content-today form #search {
+    width: 250px;
+  }
+  .wrap-content-today .actual-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrap-content-next {
+    background-color: #000000d0;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 330px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap-content-next .day {
+    padding: 1px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 0.7rem;
+    height: 40px;
+    width: inherit;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .wrap-content-next .day :nth-child(4) {
+    display: none;
+  }
+  .wrap-content-next .day :nth-child(5) {
+    display: none;
+  }
+  .wrap-content-next .day img {
+    width: 1.7rem;
+    height: auto;
+    filter: invert(100%);
+    margin-left: -30px;
+  }
+}
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 20px;
+    width: 85%;
+  }
+
+  .wrap-content-today {
+    width: 250px;
+  }
+
+  .wrap-content-next {
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
